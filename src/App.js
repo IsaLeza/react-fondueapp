@@ -1,5 +1,5 @@
 import {React, useState} from "react";
-import { BrowserRouter, Routes, Route,} from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink,} from 'reactstrap';
 import Main from "./modules/Main"
@@ -52,13 +52,13 @@ import IGLogo from "./modules/images/IGLogo.png"
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
           <NavItem>
-              <NavLink style={{color:"red"}} href="/">Home</NavLink>
+              <Link to={{color:"red"}} href="/">Home</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/menu">Menu</NavLink>
+              <Link to="/menu">Menu</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/booking">Book a Table</NavLink>
+              <Link to="/booking">Book a Table</Link>
             </NavItem>
           </Nav>
         </Collapse>

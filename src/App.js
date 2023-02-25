@@ -52,13 +52,13 @@ import IGLogo from "./modules/images/IGLogo.png"
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
           <NavItem>
-              <Link to={{color:"red"}} href="/">Home</Link>
+              <Link to="/" style={{color:"red"}}>Home</Link>
             </NavItem>
             <NavItem>
-              <Link to="/menu">Menu</Link>
+              <Link to="/menu" style={{color:"red"}}>Menu</Link>
             </NavItem>
             <NavItem>
-              <Link to="/booking">Book a Table</Link>
+              <Link to="/booking" style={{color:"red"}}>Book a Table</Link>
             </NavItem>
           </Nav>
         </Collapse>
@@ -78,11 +78,10 @@ const Footer = () => {
           <a href="#"><img style={{width:"3rem"}} src={IGLogo} alt="Instagram" /></a>
         </div>
         <ul style={{listStyle:"none"}}>
-          <li><a style={{color:"#FFF"}} href="/">Home</a></li>
-          <li><a style={{color:"#FFF"}} href="/menu">Menu</a></li>
-          <li><a style={{color:"#FFF"}} href="/booking">Book a table</a></li>
-          <li><a style={{color:"#FFF"}} href="/user/login">Log In</a></li>
-          <li><a style={{color:"#FFF"}} href="/user/reservations">Reservations</a></li>
+          <li><Link to= "/menu" style={{color:"#FFF"}}>Menu</Link></li>
+          <li><Link to= "/booking" style={{color:"#FFF"}}>Book a table</Link></li>
+          <li><Link to= "/user/login" style={{color:"#FFF"}}>Log In</Link></li>
+          <li><Link to= "/user/reservations" style={{color:"#FFF"}}>(Most be private)Reservations</Link></li>
           
         </ul>
       </div>

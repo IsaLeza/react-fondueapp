@@ -79,9 +79,10 @@ const Footer = () => {
         </div>
         <ul style={{listStyle:"none"}}>
           <li><a style={{color:"#FFF"}} href="/">Home</a></li>
-          <li><a style={{color:"#FFF"}} href="menu">Menu</a></li>
-          <li><a style={{color:"#FFF"}} href="booking">Book a table</a></li>
-          <li><a style={{color:"#FFF"}} href="user/login">Log In</a></li>
+          <li><a style={{color:"#FFF"}} href="/menu">Menu</a></li>
+          <li><a style={{color:"#FFF"}} href="/booking">Book a table</a></li>
+          <li><a style={{color:"#FFF"}} href="/user/login">Log In</a></li>
+          <li><a style={{color:"#FFF"}} href="/user/reservations">Reservations</a></li>
           
         </ul>
       </div>
